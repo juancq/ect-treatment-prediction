@@ -1,0 +1,22 @@
+lookback_months: 12
+data: 'H:/NSW APDC/clean/ECT cohort/ect_cohort_group*.csv'
+deaths: 'rbdm.feather'
+cod_urf: 'cod.parquet'
+mh_amb: 'H:/NSW MH AMB/mh_amb_group_*.parquet'
+log: 'generate_survival_allfollowup_ect.log'
+start_date: '01JUL2012'
+end_date: '28FEB2022'
+min_followup_months: 1
+exclusion: 'los3'
+
+max_followup_months:
+
+composite_outcome:
+  suicide_and_readmission:
+    - outcome_suicide
+    - outcome_psych_hospitalization
+follow_up_features: 
+  outcome_psych_hospitalization: 'F(?:2[0-9]|3[0-9])'
+  outcome_self_harm: 'X(?:6[0-9]|7[0-9]|8[0-4])'
+cod_features:
+  outcome_suicide: 'X(?:6[0-9]|7[0-9]|8[0-4])'  

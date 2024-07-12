@@ -1,0 +1,9 @@
+survival_data: 'survival_sets/feb_2022_ect_vs_noect_2012_2022_back12_followup-1_rowsNone_excludenone.csv'
+scifa: 'sa2_2016_scifa_index.csv'
+output_file: '2012_back12_none'
+
+binary_survival_data: 'survival_sets/feb_2022_ect_vs_noect_2012_2022_back12_los3_rowsNone_excludenone.csv'
+binary_output_file: '2012_back12_los3'
+
+outcomes_data: 'survival_sets/outcomes_ect_vs_noect_2012_2022_back12_followupNone1_rowsNone_excludelos3.csv'
+outcomes_output_file: 'outcomes_2012_back12_followupNone_los3'
